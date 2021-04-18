@@ -112,7 +112,7 @@ function PlasmicTestimonial__RenderFunc(props: {
           )}
         >
           {
-            "“ I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time. “"
+            '" I love what the team has done in terms of creating stylish and intuitive forms and quizzes. The pay per form is an awesome feature which works great for an Instagram based business like us"'
           }
         </div>
 
@@ -123,7 +123,7 @@ function PlasmicTestimonial__RenderFunc(props: {
             sty.box__m7Fj1
           )}
         >
-          {"Darya Finger"}
+          {"Cristina Fernando"}
         </div>
 
         <div
@@ -133,7 +133,7 @@ function PlasmicTestimonial__RenderFunc(props: {
             sty.box__fe6Xu
           )}
         >
-          {"CEO & Co-Founder @Dropbox"}
+          {"CEO & Co-Founder @love.plate"}
         </div>
       </p.Stack>
     </div>

@@ -341,23 +341,6 @@ function PlasmicHome__RenderFunc(props: {
                   }
                   title={"Design Phase"}
                 />
-
-                <FeatureCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.featureCard__xwNd
-                  )}
-                  description={
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                  }
-                  iconFront={
-                    <LightningIcon
-                      className={classNames(defaultcss.all, sty.svg__j6Yl7)}
-                      role={"img"}
-                    />
-                  }
-                  title={"Develop & Launch"}
-                />
               </p.Stack>
 
               <div className={classNames(defaultcss.all, sty.box__eQgP)} />
