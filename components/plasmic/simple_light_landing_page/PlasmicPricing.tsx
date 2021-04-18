@@ -171,6 +171,17 @@ function PlasmicPricing__RenderFunc(props: {
                           </Bullet>
                         </p.Stack>
                       }
+                      name={
+                        <div
+                          className={classNames(
+                            defaultcss.all,
+                            defaultcss.__wab_text,
+                            sty.box___4AIy
+                          )}
+                        >
+                          {"Free"}
+                        </div>
+                      }
                       price={
                         <div
                           className={classNames(
@@ -179,7 +190,7 @@ function PlasmicPricing__RenderFunc(props: {
                             sty.box__vgua8
                           )}
                         >
-                          {"Free"}
+                          {"$0"}
                         </div>
                       }
                     >
@@ -264,7 +275,17 @@ function PlasmicPricing__RenderFunc(props: {
                           </Bullet>
                         </p.Stack>
                       }
-                      name={"Team"}
+                      name={
+                        <div
+                          className={classNames(
+                            defaultcss.all,
+                            defaultcss.__wab_text,
+                            sty.box__h1Cny
+                          )}
+                        >
+                          {"Pay per form"}
+                        </div>
+                      }
                       price={
                         <div
                           className={classNames(
@@ -273,11 +294,22 @@ function PlasmicPricing__RenderFunc(props: {
                             sty.box__d9R7J
                           )}
                         >
-                          {"$3.90/Form"}
+                          {"$3.90/form"}
                         </div>
                       }
                     >
                       <LinkButton
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkButton__vyaeQ,
+                          {
+                            [sty.linkButton__inactive__vyaeQn7H4S]: hasVariant(
+                              variants,
+                              "inactive",
+                              "inactive"
+                            )
+                          }
+                        )}
                         text={"Get started"}
                         type={
                           hasVariant(variants, "inactive", "inactive")
