@@ -90,7 +90,7 @@ function PlasmicTopSection__RenderFunc(props: {
                 sty.box__tz8B
               )}
             >
-              {"Make your website"}
+              {"Make Google forms "}
             </div>
 
             <div
@@ -142,7 +142,7 @@ function PlasmicTopSection__RenderFunc(props: {
             alt={""}
             className={classNames(defaultcss.img, sty.img)}
             role={"img"}
-            src={"/plasmic/simple_light_landing_page/images/heroImage.png"}
+            src={"https://www.youtube.com/watch?v=NKHYEOAbFyM" as const}
           />
         </div>
       </p.Stack>
