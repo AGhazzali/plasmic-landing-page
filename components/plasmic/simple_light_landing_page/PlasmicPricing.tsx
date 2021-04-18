@@ -45,11 +45,18 @@ import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-i
 import * as projectcss from "./plasmic_simple_light_landing_page.module.css"; // plasmic-import: tmHzdX77B6mvgMnzXh8j6a/projectcss
 import * as sty from "./PlasmicPricing.module.css"; // plasmic-import: Agq84LorRu5-S4/css
 
-export type PlasmicPricing__VariantMembers = {};
+export type PlasmicPricing__VariantMembers = {
+  inactive: "inactive";
+};
 
-export type PlasmicPricing__VariantsArgs = {};
+export type PlasmicPricing__VariantsArgs = {
+  inactive?: SingleBooleanChoiceArg<"inactive">;
+};
+
 type VariantPropType = keyof PlasmicPricing__VariantsArgs;
-export const PlasmicPricing__VariantProps = new Array<VariantPropType>();
+export const PlasmicPricing__VariantProps = new Array<VariantPropType>(
+  "inactive"
+);
 
 export type PlasmicPricing__ArgsType = {};
 type ArgPropType = keyof PlasmicPricing__ArgsType;
@@ -62,6 +69,7 @@ export type PlasmicPricing__OverridesType = {
 };
 
 export interface DefaultPricingProps {
+  inactive?: SingleBooleanChoiceArg<"inactive">;
   className?: string;
 }
 
@@ -129,6 +137,40 @@ function PlasmicPricing__RenderFunc(props: {
                   >
                     <Plan
                       className={classNames("__wab_instance", sty.plan__rw5Cj)}
+                      description={
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(defaultcss.all, sty.box__ilKaq)}
+                        >
+                          <Bullet
+                            className={classNames(
+                              "__wab_instance",
+                              sty.bullet__tjm1G
+                            )}
+                          >
+                            {"Up to 3 forms a month"}
+                          </Bullet>
+
+                          <Bullet
+                            className={classNames(
+                              "__wab_instance",
+                              sty.bullet__sKcy5
+                            )}
+                          >
+                            {"10 questions per form"}
+                          </Bullet>
+
+                          <Bullet
+                            className={classNames(
+                              "__wab_instance",
+                              sty.bullet__fJcjo
+                            )}
+                          >
+                            {"Integration with Google Sheets"}
+                          </Bullet>
+                        </p.Stack>
+                      }
                       price={
                         <div
                           className={classNames(
@@ -137,7 +179,7 @@ function PlasmicPricing__RenderFunc(props: {
                             sty.box__vgua8
                           )}
                         >
-                          {"$10"}
+                          {"Free"}
                         </div>
                       }
                     >
@@ -148,7 +190,13 @@ function PlasmicPricing__RenderFunc(props: {
                     </Plan>
 
                     <Plan
-                      className={classNames("__wab_instance", sty.plan__oflIs)}
+                      className={classNames("__wab_instance", sty.plan__oflIs, {
+                        [sty.plan__inactive__oflIsn7H4S]: hasVariant(
+                          variants,
+                          "inactive",
+                          "inactive"
+                        )
+                      })}
                       description={
                         <p.Stack
                           as={"div"}
@@ -160,28 +208,60 @@ function PlasmicPricing__RenderFunc(props: {
                               "__wab_instance",
                               sty.bullet___3Ox0X
                             )}
-                          />
+                          >
+                            <div
+                              className={classNames(
+                                defaultcss.all,
+                                defaultcss.__wab_text,
+                                sty.box__zvD4V
+                              )}
+                            >
+                              {"All the features of Free plan"}
+                            </div>
+                          </Bullet>
 
                           <Bullet
                             className={classNames(
                               "__wab_instance",
                               sty.bullet__yZnp
                             )}
-                          />
+                          >
+                            <div
+                              className={classNames(
+                                defaultcss.all,
+                                defaultcss.__wab_text,
+                                sty.box__u9CfA
+                              )}
+                            >
+                              {"Pricing based on form published"}
+                            </div>
+                          </Bullet>
 
                           <Bullet
                             className={classNames(
                               "__wab_instance",
                               sty.bullet__jAeRx
                             )}
-                          />
+                          >
+                            <div
+                              className={classNames(
+                                defaultcss.all,
+                                defaultcss.__wab_text,
+                                sty.box___36GGz
+                              )}
+                            >
+                              {"No monthly subscription fee*"}
+                            </div>
+                          </Bullet>
 
                           <Bullet
                             className={classNames(
                               "__wab_instance",
                               sty.bullet__aqx7L
                             )}
-                          />
+                          >
+                            {"Integration with Facebook pixel"}
+                          </Bullet>
                         </p.Stack>
                       }
                       name={"Team"}
@@ -193,18 +273,64 @@ function PlasmicPricing__RenderFunc(props: {
                             sty.box__d9R7J
                           )}
                         >
-                          {"$49"}
+                          {"$3.90/Form"}
                         </div>
                       }
                     >
                       <LinkButton
                         text={"Get started"}
-                        type={"solidBlue" as const}
+                        type={
+                          hasVariant(variants, "inactive", "inactive")
+                            ? ("solidBlue" as const)
+                            : ("solidBlue" as const)
+                        }
                       />
                     </Plan>
 
                     <Plan
                       className={classNames("__wab_instance", sty.plan___6Fp0M)}
+                      description={
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(defaultcss.all, sty.box__k3Q1U)}
+                        >
+                          <Bullet
+                            className={classNames(
+                              "__wab_instance",
+                              sty.bullet__fuKDi
+                            )}
+                          >
+                            {"Up to 1000 responses per month"}
+                          </Bullet>
+
+                          <Bullet
+                            className={classNames(
+                              "__wab_instance",
+                              sty.bullet__wrDgY
+                            )}
+                          >
+                            {"Up to 5 forms per month"}
+                          </Bullet>
+
+                          <Bullet
+                            className={classNames(
+                              "__wab_instance",
+                              sty.bullet__gNjl9
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                defaultcss.all,
+                                defaultcss.__wab_text,
+                                sty.box__gg3Ol
+                              )}
+                            >
+                              {"Premium support"}
+                            </div>
+                          </Bullet>
+                        </p.Stack>
+                      }
                       name={"Enterprise"}
                       price={
                         <div
@@ -214,7 +340,7 @@ function PlasmicPricing__RenderFunc(props: {
                             sty.box__pJooa
                           )}
                         >
-                          {"$199"}
+                          {"$7.90"}
                         </div>
                       }
                     >
